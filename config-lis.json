@@ -1,0 +1,601 @@
+{
+  "plugins": [
+    {
+      "name": "GWAS",
+      "url": "http://localhost:9000/dist/jbrowse-plugin-gwas.umd.development.js"
+    },
+    {
+      "name": "TraitColorPlugin",
+      "umdLoc": { "uri": "traitcolorplugin.js" }
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "arahy.Tifrunner.gnm2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-peanut",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "cajca.ICPL87119.gnm2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-pigeonpea",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M/cajca.ICPL87119.gnm2.KL9M.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M/cajca.ICPL87119.gnm2.KL9M.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Cajanus/cajan/genomes/ICPL87119.gnm2.KL9M/cajca.ICPL87119.gnm2.KL9M.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "glyma.Wm82.gnm2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-soybean",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm2.DTC4/glyma.Wm82.gnm2.DTC4.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm2.DTC4/glyma.Wm82.gnm2.DTC4.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm2.DTC4/glyma.Wm82.gnm2.DTC4.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "medtr.A17_HM341.gnm4",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-medicago_truncatula",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "phavu.G19833.gnm1",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-common_bean",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/phavu.G19833.gnm1.zBnF.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/phavu.G19833.gnm1.zBnF.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/phavu.G19833.gnm1.zBnF.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "vigra.VC1973A.gnm6",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-mung_bean",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "hhttps://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm6.3nL8/vigra.VC1973A.gnm6.3nL8.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm6.3nL8/vigra.VC1973A.gnm6.3nL8.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm6.3nL8/vigra.VC1973A.gnm6.3nL8.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "vigun.IT97K-499-35.gnm1",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-cowpea",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW/vigun.IT97K-499-35.gnm1.QnBW.genome_main.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW/vigun.IT97K-499-35.gnm1.QnBW.genome_main.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW/vigun.IT97K-499-35.gnm1.QnBW.genome_main.fna.gz.gzi"
+          }
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "name": "Common Bean annotations",
+      "assemblyNames": ["phavu.G19833.gnm1"],
+      "trackId": "annotations-common_bean",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz/phavu.G19833.gnm1.ann1.pScz.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz/phavu.G19833.gnm1.ann1.pScz.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "name": "Cowpea annotations",
+      "assemblyNames": ["vigun.IT97K-499-35.gnm1"],
+      "trackId": "annotations-cowpea",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann1.zb5D/vigun.IT97K-499-35.gnm1.ann1.zb5D.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann1.zb5D/vigun.IT97K-499-35.gnm1.ann1.zb5D.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "name": "Medicago truncatula annotations",
+      "assemblyNames": ["medtr.A17_HM341.gnm4"],
+      "trackId": "annotations-medicago_truncatula",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/medtr.A17_HM341.gnm4.ann2.G3ZY.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/medtr.A17_HM341.gnm4.ann2.G3ZY.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "name": "Mung bean annotations",
+      "assemblyNames": ["vigra.VC1973A.gnm6"],
+      "trackId": "annotations-mung_bean",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Vigna/radiata/annotations/VC1973A.gnm6.ann1.M1Qs/vigra.VC1973A.gnm6.ann1.M1Qs.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Vigna/radiata/annotations/VC1973A.gnm6.ann1.M1Qs/vigra.VC1973A.gnm6.ann1.M1Qs.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "name": "Peanut annotations",
+      "assemblyNames": ["arahy.Tifrunner.gnm2"],
+      "trackId": "annotations-peanut",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann2.PVFB/arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann2.PVFB/arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "name": "Pigeonpea annotations",
+      "assemblyNames": ["cajca.ICPL87119.gnm2"],
+      "trackId": "annotations-pigeonpea",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Cajanus/cajan/annotations/ICPL87119.gnm2.ann1.L3ZH/cajca.ICPL87119.gnm2.ann1.L3ZH.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Cajanus/cajan/annotations/ICPL87119.gnm2.ann1.L3ZH/cajca.ICPL87119.gnm2.ann1.L3ZH.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "name": "Soybean annotations",
+      "assemblyNames": ["glyma.Wm82.gnm2"],
+      "trackId": "annotations-soybean",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6/glyma.Wm82.gnm2.ann1.RVB6.gene_models_main.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6/glyma.Wm82.gnm2.ann1.RVB6.gene_models_main.gff3.gz.tbi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "gwas_track-common_bean",
+      "name": "Common Bean GWAS",
+      "category": ["Annotation"],
+      "assemblyNames": ["phavu.G19833.gnm1"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "scoreColumn": "p_value",
+        "bedGzLocation": {
+          "uri": "legume-data/gwas/common_bean-gwas.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/gwas/common_bean-gwas.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorDot(feature.trait), p_value: undefined }"
+      },
+      "displays": [
+        {
+          "displayId": "gwas_display-common_bean",
+          "type": "LinearManhattanDisplay",
+          "renderers": {
+            "LinearManhattanRenderer": {
+              "color": "jexl:traitColor(get(feature, 'trait'))"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "gwas_track-cowpea",
+      "name": "Cowpea GWAS",
+      "category": ["Annotation"],
+      "assemblyNames": ["vigun.IT97K-499-35.gnm1"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "scoreColumn": "p_value",
+        "bedGzLocation": {
+          "uri": "legume-data/gwas/cowpea-gwas.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/gwas/cowpea-gwas.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorDot(feature.trait), p_value: undefined }"
+      },
+      "displays": [
+        {
+          "displayId": "gwas_display-cowpea",
+          "type": "LinearManhattanDisplay",
+          "renderers": {
+            "LinearManhattanRenderer": {
+              "color": "jexl:traitColor(get(feature, 'trait'))"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "gwas_track-mung_bean",
+      "name": "Mung bean GWAS",
+      "category": ["Annotation"],
+      "assemblyNames": ["vigra.VC1973A.gnm6"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "scoreColumn": "p_value",
+        "bedGzLocation": {
+          "uri": "legume-data/gwas/mung_bean-gwas.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/gwas/mung_bean-gwas.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorDot(feature.trait), p_value: undefined }"
+      },
+      "displays": [
+        {
+          "displayId": "gwas_display-mung_bean",
+          "type": "LinearManhattanDisplay",
+          "renderers": {
+            "LinearManhattanRenderer": {
+              "color": "jexl:traitColor(get(feature, 'trait'))"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "gwas_track-peanut",
+      "name": "Peanut GWAS",
+      "category": ["Annotation"],
+      "assemblyNames": ["arahy.Tifrunner.gnm2"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "scoreColumn": "p_value",
+        "bedGzLocation": {
+          "uri": "legume-data/gwas/peanut-gwas.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/gwas/peanut-gwas.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorDot(feature.trait), p_value: undefined }"
+      },
+      "displays": [
+        {
+          "displayId": "gwas_display-peanut",
+          "type": "LinearManhattanDisplay",
+          "renderers": {
+            "LinearManhattanRenderer": {
+              "color": "jexl:traitColor(get(feature, 'trait'))"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "gwas_track-pigeonpea",
+      "name": "Pigeonpea GWAS",
+      "category": ["Annotation"],
+      "assemblyNames": ["cajca.ICPL87119.gnm2"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "scoreColumn": "p_value",
+        "bedGzLocation": {
+          "uri": "legume-data/gwas/pigeonpea-gwas.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/gwas/pigeonpea-gwas.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorDot(feature.trait), p_value: undefined }"
+      },
+      "displays": [
+        {
+          "displayId": "gwas_display-pigeonpea",
+          "type": "LinearManhattanDisplay",
+          "renderers": {
+            "LinearManhattanRenderer": {
+              "color": "jexl:traitColor(get(feature, 'trait'))"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "gwas_track-soybean",
+      "name": "Soybean GWAS",
+      "category": ["Annotation"],
+      "assemblyNames": ["glyma.Wm82.gnm2"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "scoreColumn": "p_value",
+        "bedGzLocation": {
+          "uri": "legume-data/gwas/soybean-gwas.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/gwas/soybean-gwas.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorDot(feature.trait), p_value: undefined, score: formatNumberx(feature.score, 6) }"
+      },
+      "displays": [
+        {
+          "displayId": "gwas_display-soybean",
+          "type": "LinearManhattanDisplay",
+          "mouseover-not-enabled": "jexl:get(feature, 'trait')",
+          "renderers": {
+            "LinearManhattanRenderer": {
+              "color": "jexl:traitColor(get(feature, 'trait'))"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "qtl_track-common_bean",
+      "name": "Common Bean QTL",
+      "category": ["Annotation"],
+      "assemblyNames": ["phavu.G19833.gnm1"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "legume-data/qtl/common_bean-qtl.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/qtl/common_bean-qtl.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorSwatch(feature.trait) }"
+      },
+      "displays": [
+        {
+          "displayId": "qtl_display-common_bean",
+          "type": "LinearBasicDisplay",
+          "mouseover": "jexl:get(feature, 'trait')",
+          "renderer": {
+            "color1": "jexl:traitColor(get(feature, 'trait'))"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "qtl_track-cowpea",
+      "name": "Cowpea QTL",
+      "category": ["Annotation"],
+      "assemblyNames": ["vigun.IT97K-499-35.gnm1"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "legume-data/qtl/cowpea-qtl.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/qtl/cowpea-qtl.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorSwatch(feature.trait) }"
+      },
+      "displays": [
+        {
+          "displayId": "qtl_display-cowpea",
+          "type": "LinearBasicDisplay",
+          "mouseover": "jexl:get(feature, 'trait')",
+          "renderer": {
+            "color1": "jexl:traitColor(get(feature, 'trait'))"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "qtl_track-peanut",
+      "name": "Peanut QTL",
+      "category": ["Annotation"],
+      "assemblyNames": ["arahy.Tifrunner.gnm2"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "legume-data/qtl/peanut-qtl.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/qtl/peanut-qtl.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorSwatch(feature.trait) }"
+      },
+      "displays": [
+        {
+          "displayId": "qtl_display-peanut",
+          "type": "LinearBasicDisplay",
+          "mouseover": "jexl:get(feature, 'trait')",
+          "renderer": {
+            "color1": "jexl:traitColor(get(feature, 'trait'))"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "qtl_track-soybean",
+      "name": "Soybean QTL",
+      "category": ["Annotation"],
+      "assemblyNames": ["glyma.Wm82.gnm2"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "legume-data/qtl/soybean-qtl.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "legume-data/qtl/soybean-qtl.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "formatDetails": {
+        "feature": "jexl:{ color: traitColorSwatch(feature.trait) }"
+      },
+      "displays": [
+        {
+          "displayId": "qtl_display-soybean",
+          "type": "LinearBasicDisplay",
+          "mouseover": "jexl:get(feature, 'trait')",
+          "renderer": {
+            "color1": "jexl:traitColor(get(feature, 'trait'))"
+          }
+        }
+      ]
+    }
+  ]
+}
