@@ -31,13 +31,14 @@ export default function rendererFactory(pluginManager: PluginManager) {
 
       const scale = getScale(opts);
       const toY = (n: number) => height - scale(n) + YSCALEBAR_LABEL_OFFSET;
+      const dotRadius = 4;
 
       for (const feature of features.values()) {
         const [leftPx] = featureSpanPx(feature, region, bpPerPx);
         const score = feature.get("score") as number;
         ctx.fillStyle = readConfObject(config, "color", { feature });
         ctx.beginPath();
-        ctx.arc(leftPx, toY(score), 2, 0, 2 * Math.PI);
+        ctx.arc(leftPx, toY(score), dotRadius, 0, 2 * Math.PI);
         ctx.fill();
       }
 
