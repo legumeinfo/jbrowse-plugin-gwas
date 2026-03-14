@@ -119,6 +119,10 @@ dist
 
 # Ignore the directory with the JBrowse 2 build
 .jbrowse
+.test-jbrowse-*
+test-screenshots/
+test/__image_snapshots__/__diff_output__/
+debug-*.png
 
 # Cypress specific files
 cypress/videos
